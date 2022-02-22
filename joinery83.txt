@@ -1,0 +1,103 @@
+// JAVADOC COMMENT
+/** 
+ * Concatenate two dataframes on either join type(INNER or OUTER),
+ * works similar to pandas concatenate 
+ *
+ * @param JoinType  the join type (OUTER or INNER)
+ * @param DataFrames for joining
+ * @return Output DataFrame of joined dataframes with specificed join type
+ */
+    public final DataFrame<V> concat(final JoinType jtype, final DataFrame<? extends V> ... others) { 
+
+        return Combining.concat(this, jtype, others);
+    }
+ 
+ @SafeVarargs
+   public static <V> DataFrame<V> concat(
+           final DataFrame<V> first, final JoinType jtype, final DataFrame<? extends V> ... others) {
+List<DataFrame<? extends V>> dfs = new ArrayList<>(others.length + 1);
+dfs.add(first);
+dfs.addAll(Arrays.asList(others));
+       int rows = 0;
+       Set<Object> columns = new LinkedHashSet<>();	    
+       
+       if (jtype == JoinType.OUTER){
+       
+       for (DataFrame<? extends V> df : dfs) {
+           rows += df.length();
+           for (Object c : df.columns()) {
+               columns.add(c);
+           }
+       }
+}
+else if (jtype == JoinType.INNER){
+
+
+       columns = new LinkedHashSet<>(first.columns());
+       rows = first.length();
+for (DataFrame<? extends V> df : others) {
+           rows += df.length();
+           Set<Object> c = new LinkedHashSet<>(df.columns());
+           columns.retainAll(c);
+       }
+}
+else {
+	throw new IllegalArgumentException("JoinType can be either OUTER or INNER");	
+}
+
+List<Object> newcols = new ArrayList<>(columns);
+       DataFrame<V> combined = new DataFrame<V>(columns).reshape(rows, columns.size());
+       int offset = 0;
+       for (DataFrame<? extends V> df : dfs) {
+           List<Object> cols = new ArrayList<>(df.columns());
+           for (int c = 0; c < cols.size(); c++) {
+               int newc = newcols.indexOf(cols.get(c));
+               if (newc != -1){
+                   for (int r = 0; r < df.length(); r++) {
+                       combined.set(offset + r, newc, df.get(r, c));
+                   }
+               }
+           }
+           offset += df.length();
+       }
+
+       return combined;
+   }
+  
+
+// JUNIT TEST
+   @Test
+    public void testConcat() {
+        assertArrayEquals(
+                new Object[] {
+                    1L, 2L, 3L, 1L, 2L, 4L,
+                    ""a"", ""a"", ""a"", null, null, null,
+                    10.0, 20.0, 30.0, 30.0, 40.0, 80.0,
+                    null, null, null, ""b"", ""b"", ""b""
+                },
+                left.concat(right).toArray()
+            );
+    }
+    @Test
+    public void testConcatOuter() {
+        assertArrayEquals(
+                new Object[] {
+                    1L, 2L, 3L, 1L, 2L, 4L,
+                    ""a"", ""a"", ""a"", null, null, null,
+                    10.0, 20.0, 30.0, 30.0, 40.0, 80.0,
+                    null, null, null, ""b"", ""b"", ""b""
+                },
+                left.concat(JoinType.OUTER, right).toArray()
+            );
+    }
+
+    @Test
+    public void testConcatInner() {
+        assertArrayEquals(
+                new Object[] {
+                    1L, 2L, 3L, 1L, 2L, 4L,
+                    10.0, 20.0, 30.0, 30.0, 40.0, 80.0,
+                },
+                left.concat(JoinType.INNER, right).toArray()
+            );
+    }"

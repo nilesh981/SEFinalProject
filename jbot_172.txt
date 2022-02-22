@@ -1,0 +1,91 @@
+  /**
+     * This method will be invoked when JBot has to share the excel to the user. This can be shared directly to the user or coded into the application.
+     * User can also ask Jbot to read the contents of the excel file using (row,column) parameters.
+     *
+     * @param session
+     * @param event
+     */
+  public void postExcelToSlack(WebSocketSession session, Event event) throws IOException {
+        System.out.println("Enter the location of the excel file");
+        Scanner in = new Scanner(System.in);
+        String input=in.nextLine();
+        File file = new File(input);
+        okhttp3.Response response = new Meteoroid.Builder()
+            .token(slackToken)
+            .channels(event.getChannelId())
+            .uploadFile(file)
+            .build()
+            .post();
+        reply(session, event, "excel file received!");
+        String result;
+        if(event.getText().contains(",")){
+            String x="";
+            String y="";
+            int i;
+            int flagg=0;
+            for(i=0; i<event.getText().length(); i++)
+            {
+                if(event.getText().charAt(i)>='0' && event.getText().charAt(i)<='9' && flagg==0)
+                {
+                    x+=event.getText().charAt(i);
+                }
+                else if(event.getText().charAt(i)==',')
+                    flagg++;
+                else if(event.getText().charAt(i)>='0' && event.getText().charAt(i)<='9' && flagg==1)
+                {
+                    y+=event.getText().charAt(i);
+                }
+            }
+            reply(session, event, x + " , " + y);
+            try
+            {
+                Workbook book=Workbook.getWorkbook(new File(input));
+                Sheet sheet=book.getSheet(0);
+                Cell cell1=sheet.getCell(Integer.parseInt(y),Integer.parseInt(x));
+                result=cell1.getContents();
+                book.close();
+            }catch(Exception e)
+            {
+                System.out.println(e);
+                result="none";
+            }
+            reply(session, event, "the element in the " + x + "line " + y + "column is: "+result);
+        }
+        response.close();
+    }
+  /**
+     * This test will allow the user to specify location of excel which will be shared by bot and read the data from excel.
+     * The user will provide location for test.xls and read the 2nd row and 1st column of excel data.
+     * This test will compare whether the data is the same between the two.
+     *
+     * @param session
+     * @param event
+     */
+    @Test
+    @Controller(events = { EventType.DIRECT_MENTION, EventType.DIRECT_MESSAGE })
+    public void When_ExcelShared_Slack(WebSocketSession session, Event event)
+    {
+        if (event.getText().contains("file")) {
+            try {
+                postExcelToSlack(session,event);
+                TextMessage text= new TextMessage("{\"type\": \"message\"," +
+                    "\"ts\": \"1368878749.000602\"," +
+                    "\"channel\": \"A1E78BACV\"," +
+                    "\"user\": \"U023BECGF\"," +
+                    "\"text\": \"C:\\test.xls\"}");
+                bot.handleTextMessage(session, text);
+                assertThat(capture.toString(),containsString("Excel File Shared."));
+                TextMessage text1= new TextMessage("{\"type\": \"message\"," +
+                    "\"ts\": \"1368878749.000602\"," +
+                    "\"channel\": \"A1E78BACV\"," +
+                    "\"user\": \"U023BECGF\"," +
+                    "\"text\": \"Excel 2,1\"}");
+                bot.handleTextMessage(session, text1);
+                assertThat(capture.toString(),containsString("300"));
+            } catch (Exception e) {
+                ;
+            }
+        } else {
+            reply(session, event, "Hi, I am " + slackService.getCurrentUser().getName());
+        }
+    }

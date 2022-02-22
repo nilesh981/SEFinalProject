@@ -1,0 +1,53 @@
+/home/ubuntu/jbot/jbot-example/src/main/java/example/jbot/JBotApplication.java:7:	UseUtilityClass:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+/home/ubuntu/jbot/jbot-example/src/main/java/example/jbot/facebook/FbBot.java:7:	UnnecessaryImport:	Unused import 'me.ramswaroop.jbot.core.facebook.models.*'
+/home/ubuntu/jbot/jbot-example/src/main/java/example/jbot/facebook/FbBot.java:11:	UnnecessaryImport:	Unused import 'javax.annotation.PostConstruct'
+/home/ubuntu/jbot/jbot-example/src/main/java/example/jbot/slack/SlackWebhooks.java:56:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+/home/ubuntu/jbot/jbot-example/src/test/java/example/jbot/facebook/FbBotTest.java:35:	UnusedPrivateField:	Avoid unused private fields such as 'restTemplate'.
+/home/ubuntu/jbot/jbot-example/src/test/java/example/jbot/facebook/FbBotTest.java:44:	MethodNamingConventions:	The JUnit 4 test method name 'When_PostbackInCallback_Then_InvokeOnReceivePostback' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/ubuntu/jbot/jbot-example/src/test/java/example/jbot/facebook/FbBotTest.java:54:	MethodNamingConventions:	The JUnit 4 test method name 'When_QuickReplyInCallback_Then_InvokeOnReceiveQuickReply' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/ubuntu/jbot/jbot-example/src/test/java/example/jbot/facebook/FbBotTest.java:65:	MethodNamingConventions:	The JUnit 4 test method name 'When_ConversationPatternInCallback_Then_StartConversation' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/ubuntu/jbot/jbot-example/src/test/java/example/jbot/facebook/FbBotTest.java:100:	MethodNamingConventions:	The JUnit 4 test method name 'Given_InConversation_When_AnswerNoInCallback_Then_StopConversation' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/ubuntu/jbot/jbot-example/src/test/java/example/jbot/slack/SlackBotTest.java:65:	MethodNamingConventions:	The JUnit 4 test method name 'When_DirectMention_Then_InvokeOnDirectMention' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/ubuntu/jbot/jbot-example/src/test/java/example/jbot/slack/SlackBotTest.java:75:	MethodNamingConventions:	The JUnit 4 test method name 'When_DirectMessage_Then_InvokeOnDirectMessage' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/ubuntu/jbot/jbot-example/src/test/java/example/jbot/slack/SlackBotTest.java:86:	MethodNamingConventions:	The JUnit 4 test method name 'When_MessageWithPattern_Then_InvokeOnReceiveMessageWithPattern' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/ubuntu/jbot/jbot-example/src/test/java/example/jbot/slack/SlackBotTest.java:100:	MethodNamingConventions:	The JUnit 4 test method name 'When_DirectMessageWithPattern_Then_InvokeOnDirectMessage' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/ubuntu/jbot/jbot-example/src/test/java/example/jbot/slack/SlackBotTest.java:111:	MethodNamingConventions:	The JUnit 4 test method name 'When_MessageWithPatternAndPatternFlags_Then_InvokeOnReceiveMessageWithPatternAndPatternFlags' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/ubuntu/jbot/jbot-example/src/test/java/example/jbot/slack/SlackBotTest.java:122:	MethodNamingConventions:	The JUnit 4 test method name 'When_DirectMessage_Then_InvokeOnPinAdded' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/ubuntu/jbot/jbot-example/src/test/java/example/jbot/slack/SlackBotTest.java:138:	MethodNamingConventions:	The JUnit 4 test method name 'When_DirectMessage_Then_InvokeOnFileShared' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/ubuntu/jbot/jbot-example/src/test/java/example/jbot/slack/SlackBotTest.java:149:	MethodNamingConventions:	The JUnit 4 test method name 'When_UserJoinsChannel_Then_InvokeOnMemberJoinedChannel' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/ubuntu/jbot/jbot-example/src/test/java/example/jbot/slack/SlackBotTest.java:159:	MethodNamingConventions:	The JUnit 4 test method name 'When_UserLeavesChannel_Then_InvokeOnMemberLeftChannel' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/ubuntu/jbot/jbot-example/src/test/java/example/jbot/slack/SlackBotTest.java:173:	MethodNamingConventions:	The JUnit 4 test method name 'When_ConversationPattern_Then_StartConversation' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/ubuntu/jbot/jbot-example/src/test/java/example/jbot/slack/SlackBotTest.java:208:	MethodNamingConventions:	The JUnit 4 test method name 'Given_InConversation_When_AnswerNo_Then_StopConversation' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/ubuntu/jbot/jbot-example/src/test/java/example/jbot/slack/SlackBotTest.java:239:	MethodNamingConventions:	The JUnit 4 test method name 'Given_InConversation_WhenInvalidTimeChars' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/ubuntu/jbot/jbot-example/src/test/java/example/jbot/slack/SlackBotTest.java:262:	MethodNamingConventions:	The JUnit 4 test method name 'Given_InConversation_WhenInvalidTime' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/ubuntu/jbot/jbot-example/src/test/java/example/jbot/slack/SlackSlashCommandTest.java:29:	MethodNamingConventions:	The JUnit 4 test method name 'onReceiveSlashCommand_When_IncorrectToken_Should_ReturnSorryRichMessage' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/ubuntu/jbot/jbot/src/main/java/me/ramswaroop/jbot/core/common/BaseBot.java:18:	UnusedPrivateField:	Avoid unused private fields such as 'logger'.
+/home/ubuntu/jbot/jbot/src/main/java/me/ramswaroop/jbot/core/common/BaseBot.java:89:	ControlStatementBraces:	This statement should have braces
+/home/ubuntu/jbot/jbot/src/main/java/me/ramswaroop/jbot/core/common/BaseBot.java:108:	SimplifyBooleanReturns:	Avoid unnecessary if..then..else statements when returning booleans
+/home/ubuntu/jbot/jbot/src/main/java/me/ramswaroop/jbot/core/common/BaseBot.java:222:	ControlStatementBraces:	This statement should have braces
+/home/ubuntu/jbot/jbot/src/main/java/me/ramswaroop/jbot/core/common/BaseBot.java:223:	ControlStatementBraces:	This statement should have braces
+/home/ubuntu/jbot/jbot/src/main/java/me/ramswaroop/jbot/core/common/BaseBot.java:227:	ControlStatementBraces:	This statement should have braces
+/home/ubuntu/jbot/jbot/src/main/java/me/ramswaroop/jbot/core/common/BaseBot.java:228:	ControlStatementBraces:	This statement should have braces
+/home/ubuntu/jbot/jbot/src/main/java/me/ramswaroop/jbot/core/common/BaseBot.java:229:	ControlStatementBraces:	This statement should have braces
+/home/ubuntu/jbot/jbot/src/main/java/me/ramswaroop/jbot/core/common/BaseBot.java:230:	ControlStatementBraces:	This statement should have braces
+/home/ubuntu/jbot/jbot/src/main/java/me/ramswaroop/jbot/core/facebook/Bot.java:6:	UnnecessaryImport:	Unused import 'me.ramswaroop.jbot.core.facebook.models.*'
+/home/ubuntu/jbot/jbot/src/main/java/me/ramswaroop/jbot/core/facebook/Bot.java:10:	UnnecessaryImport:	Unused import 'org.springframework.beans.factory.annotation.Value'
+/home/ubuntu/jbot/jbot/src/main/java/me/ramswaroop/jbot/core/facebook/Bot.java:15:	UnnecessaryImport:	Unused import 'org.springframework.web.bind.annotation.*'
+/home/ubuntu/jbot/jbot/src/main/java/me/ramswaroop/jbot/core/facebook/Bot.java:45:	UnusedPrivateMethod:	Avoid unused private methods such as 'constructFbSendUrl()'.
+/home/ubuntu/jbot/jbot/src/main/java/me/ramswaroop/jbot/core/facebook/Bot.java:95:	LiteralsFirstInComparisons:	Position literals first in String comparisons
+/home/ubuntu/jbot/jbot/src/main/java/me/ramswaroop/jbot/core/facebook/Bot.java:138:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+/home/ubuntu/jbot/jbot/src/main/java/me/ramswaroop/jbot/core/facebook/Bot.java:156:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+/home/ubuntu/jbot/jbot/src/main/java/me/ramswaroop/jbot/core/facebook/Bot.java:160:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+/home/ubuntu/jbot/jbot/src/main/java/me/ramswaroop/jbot/core/facebook/Bot.java:269:	UseLocaleWithCaseConversions:	When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+/home/ubuntu/jbot/jbot/src/main/java/me/ramswaroop/jbot/core/facebook/Bot.java:270:	ControlStatementBraces:	This statement should have braces
+/home/ubuntu/jbot/jbot/src/main/java/me/ramswaroop/jbot/core/slack/Bot.java:116:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+/home/ubuntu/jbot/jbot/src/main/java/me/ramswaroop/jbot/core/slack/Bot.java:127:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+/home/ubuntu/jbot/jbot/src/main/java/me/ramswaroop/jbot/core/slack/Bot.java:157:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+/home/ubuntu/jbot/jbot/src/main/java/me/ramswaroop/jbot/core/slack/Bot.java:172:	UseLocaleWithCaseConversions:	When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+/home/ubuntu/jbot/jbot/src/main/java/me/ramswaroop/jbot/core/slack/Bot.java:185:	GuardLogStatement:	Logger calls should be surrounded by log level guards.
+/home/ubuntu/jbot/jbot/src/main/java/me/ramswaroop/jbot/core/slack/Bot.java:239:	UseLocaleWithCaseConversions:	When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+/home/ubuntu/jbot/jbot/src/main/java/me/ramswaroop/jbot/core/slack/Bot.java:240:	ControlStatementBraces:	This statement should have braces
+/home/ubuntu/jbot/jbot/src/main/java/me/ramswaroop/jbot/core/slack/Bot.java:359:	UseLocaleWithCaseConversions:	When doing a String.toLowerCase()/toUpperCase() call, use a Locale
+/home/ubuntu/jbot/jbot/src/main/java/me/ramswaroop/jbot/core/slack/models/Message.java:41:	UncommentedEmptyConstructor:	Document empty constructor
+/home/ubuntu/jbot/jbot/src/main/java/me/ramswaroop/jbot/core/slack/models/RichMessage.java:21:	UncommentedEmptyConstructor:	Document empty constructor
+

@@ -1,0 +1,166 @@
+/home/mmunjal2/joinery/src/main/java/joinery/DataFrame.java:246:	ForLoopCanBeForeach:	This for loop can be replaced by a foreach loop
+/home/mmunjal2/joinery/src/main/java/joinery/DataFrame.java:1881:	OptimizableToArrayCall:	This call to Collection.toArray() may be optimizable
+/home/mmunjal2/joinery/src/main/java/joinery/DataFrame.java:1900:	OptimizableToArrayCall:	This call to Collection.toArray() may be optimizable
+/home/mmunjal2/joinery/src/main/java/joinery/DataFrame.java:2445:	UnnecessaryModifier:	Unnecessary modifier 'static' on enum 'NumberDefault': nested enums are implicitly static
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Aggregation.java:37:	UseUtilityClass:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Aggregation.java:42:	PrimitiveWrapperInstantiation:	Do not use `new Integer(...)`, prefer `Integer.valueOf(...)`
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Aggregation.java:228:	UnnecessaryModifier:	Unnecessary modifier 'final' on method 'name': private methods cannot be overridden
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Aggregation.java:253:	PrimitiveWrapperInstantiation:	Do not use `new Double(...)`, prefer `Double.valueOf(...)`
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Aggregation.java:254:	PrimitiveWrapperInstantiation:	Do not use `new Double(...)`, prefer `Double.valueOf(...)`
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Aggregation.java:255:	PrimitiveWrapperInstantiation:	Do not use `new Double(...)`, prefer `Double.valueOf(...)`
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Aggregation.java:256:	PrimitiveWrapperInstantiation:	Do not use `new Double(...)`, prefer `Double.valueOf(...)`
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Aggregation.java:257:	PrimitiveWrapperInstantiation:	Do not use `new Double(...)`, prefer `Double.valueOf(...)`
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Aggregation.java:258:	PrimitiveWrapperInstantiation:	Do not use `new Double(...)`, prefer `Double.valueOf(...)`
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Aggregation.java:282:	ForLoopCanBeForeach:	This for loop can be replaced by a foreach loop
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Combining.java:35:	UseUtilityClass:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Combining.java:118:	OptimizableToArrayCall:	This call to Collection.toArray() may be optimizable
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Comparison.java:26:	UseUtilityClass:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Conversion.java:39:	UseUtilityClass:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Conversion.java:233:	PrimitiveWrapperInstantiation:	Do not use `new Double(...)`, prefer `Double.valueOf(...)`
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Conversion.java:249:	EmptyStatementNotInLoop:	An empty statement (semicolon) not part of a loop
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Conversion.java:261:	ControlStatementBraces:	This statement should have braces
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Conversion.java:289:	UselessParentheses:	Useless parentheses.
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Conversion.java:293:	ControlStatementBraces:	This statement should have braces
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Conversion.java:312:	ForLoopCanBeForeach:	This for loop can be replaced by a foreach loop
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Conversion.java:368:	PrimitiveWrapperInstantiation:	Do not use `new Long(...)`, prefer `Long.valueOf(...)`
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Conversion.java:379:	PrimitiveWrapperInstantiation:	Do not use `new Double(...)`, prefer `Double.valueOf(...)`
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Conversion.java:391:	PrimitiveWrapperInstantiation:	Do not use `new Boolean(true)`, prefer `Boolean.TRUE`
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Conversion.java:393:	PrimitiveWrapperInstantiation:	Do not use `new Boolean(false)`, prefer `Boolean.FALSE`
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Display.java:52:	UseUtilityClass:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Display.java:192:	UnnecessaryModifier:	Unnecessary modifier 'final' on method 'title': private methods cannot be overridden
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Display.java:201:	UnnecessaryModifier:	Unnecessary modifier 'final' on method 'dateFormat': private methods cannot be overridden
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Display.java:209:	OneDeclarationPerLine:	Use one line for each declaration, it enhances code readability.
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Display.java:213:	OneDeclarationPerLine:	Use one line for each declaration, it enhances code readability.
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Display.java:218:	ControlStatementBraces:	This statement should have braces
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Grouping.java:42:	UncommentedEmptyConstructor:	Document empty constructor
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Inspection.java:26:	UseUtilityClass:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Pivoting.java:33:	UseUtilityClass:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Selection.java:29:	UseUtilityClass:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Serialization.java:65:	UseUtilityClass:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Serialization.java:110:	ForLoopCanBeForeach:	This for loop can be replaced by a foreach loop
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Serialization.java:157:	UnnecessaryModifier:	Unnecessary modifier 'final' on method 'clamp': private methods cannot be overridden
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Serialization.java:161:	UnnecessaryModifier:	Unnecessary modifier 'final' on method 'lpad': private methods cannot be overridden
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Serialization.java:171:	UnnecessaryModifier:	Unnecessary modifier 'final' on method 'rpad': private methods cannot be overridden
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Serialization.java:181:	UnnecessaryModifier:	Unnecessary modifier 'final' on method 'truncate': private methods cannot be overridden
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Serialization.java:186:	UnnecessaryModifier:	Unnecessary modifier 'final' on method 'fmt': private methods cannot be overridden
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Serialization.java:187:	ControlStatementBraces:	This statement should have braces
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Serialization.java:394:	UnnecessaryModifier:	Unnecessary modifier 'final' on method 'readCell': private methods cannot be overridden
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Serialization.java:408:	UnnecessaryModifier:	Unnecessary modifier 'final' on method 'writeCell': private methods cannot be overridden
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Shaping.java:27:	UseUtilityClass:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Shell.java:27:	UnnecessaryImport:	Unused import 'java.util.Arrays'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Shell.java:47:	UseUtilityClass:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Shell.java:132:	CompareObjectsWithEquals:	Use equals() to compare object references.
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Shell.java:141:	AvoidInstanceofChecksInCatchClause:	An instanceof check is being performed on the caught exception.  Create a separate catch clause for this exception type.
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Shell.java:142:	EmptyStatementNotInLoop:	An empty statement (semicolon) not part of a loop
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Shell.java:161:	AssignmentInOperand:	Avoid assignments in operands
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Shell.java:204:	ForLoopCanBeForeach:	This for loop can be replaced by a foreach loop
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Shell.java:210:	CompareObjectsWithEquals:	Use equals() to compare object references.
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Sorting.java:30:	UseUtilityClass:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+/home/mmunjal2/joinery/src/main/java/joinery/impl/SparseBitSet.java:50:	UselessParentheses:	Useless parentheses.
+/home/mmunjal2/joinery/src/main/java/joinery/impl/SparseBitSet.java:56:	UselessParentheses:	Useless parentheses.
+/home/mmunjal2/joinery/src/main/java/joinery/impl/SparseBitSet.java:63:	UselessParentheses:	Useless parentheses.
+/home/mmunjal2/joinery/src/main/java/joinery/impl/SparseBitSet.java:64:	UselessParentheses:	Useless parentheses.
+/home/mmunjal2/joinery/src/main/java/joinery/impl/SparseBitSet.java:108:	UselessParentheses:	Useless parentheses.
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Timeseries.java:28:	UseUtilityClass:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+/home/mmunjal2/joinery/src/main/java/joinery/impl/Timeseries.java:48:	LooseCoupling:	Avoid using implementation types like 'LinkedList'; use the interface instead
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:123:	MethodNamingConventions:	The static method name 'jsFunction_add' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:133:	MethodNamingConventions:	The static method name 'jsFunction_drop' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:137:	MethodNamingConventions:	The static method name 'jsFunction_retain' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:141:	MethodNamingConventions:	The static method name 'jsFunction_reindex' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:152:	MethodNamingConventions:	The instance method name 'jsFunction_resetIndex' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:156:	MethodNamingConventions:	The instance method name 'jsFunction_rename' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:160:	MethodNamingConventions:	The static method name 'jsFunction_append' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:167:	MethodNamingConventions:	The instance method name 'jsFunction_reshape' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:171:	MethodNamingConventions:	The static method name 'jsFunction_join' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:189:	MethodNamingConventions:	The static method name 'jsFunction_joinOn' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:199:	MethodNamingConventions:	The static method name 'jsFunction_merge' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:209:	MethodNamingConventions:	The static method name 'jsFunction_update' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:217:	MethodNamingConventions:	The static method name 'jsFunction_coalesce' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:225:	MethodNamingConventions:	The instance method name 'jsFunction_size' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:229:	MethodNamingConventions:	The instance method name 'jsFunction_length' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:233:	MethodNamingConventions:	The instance method name 'jsFunction_isEmpty' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:237:	MethodNamingConventions:	The instance method name 'jsFunction_index' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:241:	MethodNamingConventions:	The instance method name 'jsFunction_columns' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:245:	MethodNamingConventions:	The instance method name 'jsFunction_get' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:249:	MethodNamingConventions:	The instance method name 'jsFunction_slice' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:253:	MethodNamingConventions:	The instance method name 'jsFunction_set' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:257:	MethodNamingConventions:	The instance method name 'jsFunction_col' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:261:	MethodNamingConventions:	The instance method name 'jsFunction_row' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:265:	MethodNamingConventions:	The instance method name 'jsFunction_select' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:271:	MethodNamingConventions:	The static method name 'jsFunction_head' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:280:	MethodNamingConventions:	The static method name 'jsFunction_tail' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:289:	MethodNamingConventions:	The instance method name 'jsFunction_flatten' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:293:	MethodNamingConventions:	The instance method name 'jsFunction_transpose' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:297:	MethodNamingConventions:	The instance method name 'jsFunction_apply' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:303:	MethodNamingConventions:	The instance method name 'jsFunction_transform' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:309:	MethodNamingConventions:	The static method name 'jsFunction_convert' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:320:	MethodNamingConventions:	The instance method name 'jsFunction_isnull' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:324:	MethodNamingConventions:	The instance method name 'jsFunction_notnull' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:328:	MethodNamingConventions:	The static method name 'jsFunction_groupBy' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:340:	MethodNamingConventions:	The instance method name 'jsFunction_groups' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:344:	MethodNamingConventions:	The instance method name 'jsFunction_explode' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:348:	MethodNamingConventions:	The instance method name 'jsFunction_aggregate' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:354:	MethodNamingConventions:	The instance method name 'jsFunction_count' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:358:	MethodNamingConventions:	The instance method name 'jsFunction_collapse' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:362:	MethodNamingConventions:	The instance method name 'jsFunction_sum' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:366:	MethodNamingConventions:	The instance method name 'jsFunction_prod' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:370:	MethodNamingConventions:	The instance method name 'jsFunction_mean' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:374:	MethodNamingConventions:	The instance method name 'jsFunction_stddev' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:378:	MethodNamingConventions:	The instance method name 'jsFunction_var' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:382:	MethodNamingConventions:	The instance method name 'jsFunction_skew' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:386:	MethodNamingConventions:	The instance method name 'jsFunction_kurt' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:390:	MethodNamingConventions:	The instance method name 'jsFunction_min' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:394:	MethodNamingConventions:	The instance method name 'jsFunction_max' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:398:	MethodNamingConventions:	The instance method name 'jsFunction_median' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:402:	MethodNamingConventions:	The instance method name 'jsFunction_cumsum' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:406:	MethodNamingConventions:	The instance method name 'jsFunction_cumprod' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:410:	MethodNamingConventions:	The instance method name 'jsFunction_cummin' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:414:	MethodNamingConventions:	The instance method name 'jsFunction_cummax' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:418:	MethodNamingConventions:	The instance method name 'jsFunction_describe' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:422:	MethodNamingConventions:	The static method name 'jsFunction_pivot' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:432:	MethodNamingConventions:	The static method name 'jsFunction_sortBy' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:436:	MethodNamingConventions:	The instance method name 'jsFunction_types' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:440:	MethodNamingConventions:	The instance method name 'jsFunction_numeric' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:444:	MethodNamingConventions:	The instance method name 'jsFunction_nonnumeric' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:448:	MethodNamingConventions:	The instance method name 'jsFunction_map' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:452:	MethodNamingConventions:	The static method name 'jsFunction_unique' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:456:	MethodNamingConventions:	The static method name 'jsFunction_diff' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:461:	MethodNamingConventions:	The static method name 'jsFunction_percentChange' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:466:	MethodNamingConventions:	The static method name 'jsFunction_rollapply' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:473:	MethodNamingConventions:	The static method name 'jsFunction_plot' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:483:	MethodNamingConventions:	The instance method name 'jsFunction_show' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:487:	MethodNamingConventions:	The static method name 'jsStaticFunction_readCsv' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:494:	MethodNamingConventions:	The instance method name 'jsFunction_writeCsv' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:499:	MethodNamingConventions:	The static method name 'jsStaticFunction_readXls' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:506:	MethodNamingConventions:	The instance method name 'jsFunction_writeXls' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:511:	MethodNamingConventions:	The static method name 'jsFunction_toArray' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/main/java/joinery/impl/js/DataFrameAdapter.java:515:	MethodNamingConventions:	The static method name 'jsFunction_toString' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/test/java/examples/FizzBuzz.java:8:	UseUtilityClass:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+/home/mmunjal2/joinery/src/test/java/joinery/DataFrameComparisonTest.java:29:	OneDeclarationPerLine:	Use one line for each declaration, it enhances code readability.
+/home/mmunjal2/joinery/src/test/java/joinery/DataFramePlotTest.java:30:	UseUtilityClass:	All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.
+/home/mmunjal2/joinery/src/test/java/joinery/DataFrameSelectionTest.java:64:	PrimitiveWrapperInstantiation:	Do not use `new Integer(...)`, prefer `Integer.valueOf(...)`
+/home/mmunjal2/joinery/src/test/java/joinery/DataFrameSelectionTest.java:90:	PrimitiveWrapperInstantiation:	Do not use `new Integer(...)`, prefer `Integer.valueOf(...)`
+/home/mmunjal2/joinery/src/test/java/joinery/DataFrameSerializationTest.java:96:	LocalVariableNamingConventions:	The local variable name 'df_noHeader' doesn't match '[a-z][a-zA-Z0-9]*'
+/home/mmunjal2/joinery/src/test/java/joinery/DataFrameSerializationTest.java:293:	CloseResource:	Ensure that resources like this PreparedStatement object are closed after use
+/home/mmunjal2/joinery/src/test/java/joinery/DataFrameShellTest.java:49:	CloseResource:	Ensure that resources like this InputStream object are closed after use
+/home/mmunjal2/joinery/src/test/java/joinery/DataFrameShellTest.java:56:	CloseResource:	Ensure that resources like this InputStream object are closed after use
+/home/mmunjal2/joinery/src/test/java/joinery/DataFrameShellTest.java:74:	CloseResource:	Ensure that resources like this InputStream object are closed after use
+/home/mmunjal2/joinery/src/test/java/joinery/DataFrameShellTest.java:86:	CloseResource:	Ensure that resources like this InputStream object are closed after use
+/home/mmunjal2/joinery/src/test/java/joinery/DataFrameShellTest.java:101:	CloseResource:	Ensure that resources like this InputStream object are closed after use
+/home/mmunjal2/joinery/src/test/java/joinery/DataFrameShellTest.java:111:	CloseResource:	Ensure that resources like this InputStream object are closed after use
+/home/mmunjal2/joinery/src/test/java/joinery/DataFrameShellTest.java:121:	CloseResource:	Ensure that resources like this InputStream object are closed after use
+/home/mmunjal2/joinery/src/test/java/joinery/DataFrameShellTest.java:128:	UnnecessaryModifier:	Unnecessary modifier 'final' on method 'input': private methods cannot be overridden
+/home/mmunjal2/joinery/src/test/java/joinery/DataFrameTimeseriesTest.java:141:	ControlStatementBraces:	This statement should have braces
+/home/mmunjal2/joinery/src/test/java/joinery/SparseBitSetTest.java:213:	ControlStatementBraces:	This statement should have braces
+/home/mmunjal2/joinery/src/test/java/joinery/doctest/DocTestSuite.java:76:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'value': the method is declared in an annotation type
+/home/mmunjal2/joinery/src/test/java/joinery/doctest/DocTestSuite.java:98:	UseCollectionIsEmpty:	Substitute calls to size() == 0 (or size() != 0, size() > 0, size() < 1) with calls to isEmpty()
+/home/mmunjal2/joinery/src/test/java/joinery/doctest/DocTestSuite.java:158:	CloseResource:	Ensure that resources like this ForwardingJavaFileManager object are closed after use
+/home/mmunjal2/joinery/src/test/java/joinery/doctest/DocTestSuite.java:226:	IdenticalCatchBranches:	'catch' branch identical to 'AssertionError' branch
+/home/mmunjal2/joinery/src/test/java/joinery/doctest/DocTestSuite.java:244:	LiteralsFirstInComparisons:	Position literals first in String comparisons
+/home/mmunjal2/joinery/src/test/java/joinery/doctest/DocTestSuite.java:278:	UnusedFormalParameter:	Avoid unused constructor parameters such as 'builder'.
+/home/mmunjal2/joinery/src/test/java/joinery/js/JavascriptExpressionSuite.java:36:	UnnecessaryModifier:	Unnecessary modifier 'public' on method 'name': the method is declared in an annotation type
+/home/mmunjal2/joinery/src/test/java/joinery/js/JavascriptExpressionSuite.java:43:	UnnecessaryModifier:	Unnecessary modifier 'final' on resource specification 'reader': resource specifications are implicitly final
+/home/mmunjal2/joinery/src/test/java/joinery/js/JavascriptExpressionSuite.java:83:	IdenticalCatchBranches:	'catch' branch identical to 'AssertionError' branch
+/home/mmunjal2/joinery/src/test/java/joinery/js/JavascriptExpressionSuite.java:83:	AvoidCatchingThrowable:	A catch statement should never catch throwable since it includes errors.
+/home/mmunjal2/joinery/src/test/java/joinery/js/JavascriptExpressionSuite.java:96:	UnusedFormalParameter:	Avoid unused constructor parameters such as 'builder'.
+/home/mmunjal2/joinery/src/test/java/joinery/perf/PerformanceTestUtils.java:29:	ClassWithOnlyPrivateConstructorsShouldBeFinal:	A class which only has private constructors should be final

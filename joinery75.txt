@@ -1,0 +1,55 @@
+// JAVADOC COMMENT
+   /** 
+   * Returning DataFrame with sorted on index, this method called with DataFrame
+   * and it will apply the sorting on index or labels and return the sorted DataFrame
+   *
+   * @param None
+   * 
+   * @return Sorted DataFrame on index
+   */
+  public DataFrame<V> sortByIdx() {
+        return Sorting.sortByIdx(this);
+      }
+
+   public static <V> DataFrame<V> sortByIdx(
+            final DataFrame<V> df) {
+        final DataFrame<V> sorted = new DataFrame<V>(df.columns());
+        final Comparator<Integer> cmp = new Comparator<Integer>() {
+            @Override
+            public int compare(final Integer r1, final Integer r2) {
+                return r1;
+            }
+        };
+
+        final Integer[] rows = new Integer[df.length()];
+        for (int r = 0; r < df.length(); r++) {
+            rows[r] = r;
+        }
+        Arrays.sort(rows, cmp);
+
+        final List<Object> labels = new ArrayList<>(df.index());
+        for (final Integer r : rows) {
+            final Object label = r < labels.size() ? labels.get(r) : r;
+            sorted.append(label, df.row(r));
+        }
+
+        return sorted;
+    }
+
+
+// JUNIT TEST
+    @Test
+    public final void testSortByIdx() {
+        final DataFrame<Object> sorted = df.sortBy(""value"").sortByIdx();
+        assertArrayEquals(
+                ""original index values are unsorted"",
+                new Object[] {3, 0, 4, 2, 1, 5},
+                df.sortBy(""name"").index().toArray()
+            );
+	System.out.println(sorted);
+        assertArrayEquals(
+                ""index values are sorted"",
+                new Object[] { 1, 2, 3, 4, 5, 6 },
+                sorted.col(1).toArray()
+            );
+    }"
